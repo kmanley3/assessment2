@@ -33,9 +33,15 @@ const cart = [
     }
 ]
 
-//CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const justThePrices = cart.map(function(element){
+    return element.price
+})
+console.log(justThePrices)
+const summedPrice = justThePrices.reduce(function(acc,curr){
+    return acc + curr
+})
+// console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,7 +59,11 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    finalPrice = cartTotal * (1 + tax) - couponValue
+    return finalPrice
+}
+// console.log(calcFinalPrice(summedPrice, 5, .06))
 
 
 
@@ -78,7 +88,9 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
+    The information a restaurant would need about its customers would be. Their Name (for identification), what table they're at(for location), what drink they have and its cost, what entree they have and its cost,
+    what dessert they're having, and how they're paying, and total cost for that customer Their name should be a string, their table number should be a number, their drink should be a string, 
+    their entree should be a string, the costs of both their entree and drink should be a number, their dessert should be a string, dessert cost should be a number. How they're paying is a string
 
 */
 
@@ -87,4 +99,14 @@ const cart = [
     guidelines.
 */
 
-//CODE HERE
+const customer = {
+    name        : "Kirsten",
+    tableNum    : 5,
+    drink       : "Red Cream Soda",
+    drinkCost   : 1.99,
+    entree      : "Chicken Pesto",
+    entreeCost  : 15,
+    dessert     : "Lava Cake",
+    dessertCost : 10
+
+}

@@ -29,8 +29,14 @@
     user might filter by, like 'gluten-free' or
     'kids'
 */
-
-//CODE HERE
+const pizza = {
+    name: "Hawaiian",
+    price: 19,
+    category: "Entree",
+    popularity: 9,
+    rating: 8.4,
+    tags: ['delicious', 'controversial', 'kids']
+}
 
 
 
@@ -42,7 +48,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+// console.log(pizza.popularity)
 
 
 /*
@@ -52,7 +58,7 @@
     get the value.
 */
 
-//CODE HERE
+// console.log(pizza.tags[1])
 
 
 /*
@@ -62,7 +68,8 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let {price} = pizza;
+// console.log(price)
 
 
 /*
@@ -72,7 +79,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let {category} = pizza;
+// console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -87,7 +95,43 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+const foodArr = [
+    {
+        food: "Spaghetti",
+        price: 13,
+        popularity: 10,
+        rating: 7.5,
+        tags: ['gluten free', 'pasta', 'kids']
+    },
+    {
+        food: "Chicken Pesto",
+        price: 16,
+        popularity: 9,
+        rating: 9.5,
+        tags: ['gluten free', 'vegan available', 'kids']
+    },
+    {
+        food: "Lasagna",
+        price: 18,
+        popularity: 7,
+        rating: 6.3,
+        tags: ['extra cheese', 'delicious', 'kids']
+    },
+    {
+        food: "Spaghetti Squash Alfredo",
+        price: 14,
+        popularity: 10,
+        rating: 9.9,
+        tags: ['gluten free', 'vegan', 'healthy']
+    },
+    {
+        food: "Lobsta Pasta",
+        price: 20,
+        popularity: 8,
+        rating: 7.5,
+        tags: ['shellfish', 'pasta', 'healthy']
+    }
+]
 
 
 
@@ -103,7 +147,15 @@
     your food objects has.
 */
 
-//CODE HERE
+// const kidsFood = (callback) =>{
+//     callback()
+// }
+
+// const filterKids = () =>{
+//     return foodArr.filter(function(element){
+//         return element['tags'].includes('kids')
+//     })
+// }
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
